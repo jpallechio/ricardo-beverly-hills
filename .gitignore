@@ -11,3 +11,4 @@ Homestead.yaml
 #intellij/java ignores
 *.iml
 target
+*.idea
