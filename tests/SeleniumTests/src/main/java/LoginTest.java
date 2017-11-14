@@ -15,8 +15,8 @@ public class LoginTest extends TestCase {
     }
 
     public void testEmailLoginWithButton(){
-        chromeDriver.findElement(By.id("email")).sendKeys("email");
-        chromeDriver.findElement(By.id("password")).sendKeys("password");
+        chromeDriver.findElement(By.id("email")).sendKeys("acp@acp.com");
+        chromeDriver.findElement(By.id("password")).sendKeys("acpacp");
         chromeDriver.findElement(By.className("btn-primary")).click();
 
         assertEquals(chromeDriver.getCurrentUrl(), "http://rbh.greenrivertech.net/part-company-claim");
