@@ -17,7 +17,9 @@ public class LoginTest extends TestCase {
         chromeDriver.findElement(By.id("password")).sendKeys("acpacp");
         chromeDriver.findElement(By.className("btn-primary")).click();
 
-        assertEquals(chromeDriver.getCurrentUrl(), "http://rbh.greenrivertech.net/part-company-claim");
+        assertEquals(chromeDriver.getCurrentUrl(), "http://rbh.greenrivertech.net/claim");
+
+        chromeDriver.close();
     }
 
     public void testEmailLoginPC(){
@@ -26,5 +28,7 @@ public class LoginTest extends TestCase {
         chromeDriver.findElement(By.className("btn-primary")).click();
 
         assertEquals(chromeDriver.getCurrentUrl(), "http://rbh.greenrivertech.net/part-company-claim");
+
+        chromeDriver.close();
     }
 }
